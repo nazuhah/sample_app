@@ -1,4 +1,5 @@
 
+
 # == Schema Information
 #
 # Table name: users
