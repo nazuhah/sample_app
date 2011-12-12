@@ -36,7 +36,7 @@ before_save :encrypt_password
     encrypted_password == encrypt(submitted_password)
   end
 
-def has_password?(submitted_password)
+  def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
   end
 
@@ -45,6 +45,16 @@ def has_password?(submitted_password)
     return nil  if user.nil?
     return user if user.has_password?(submitted_password)
   end
+
+  def self.authenticate_with_salt(id, cookie_salt)
+    user = find_by_id(id)
+    (user && user.salt == cookie_salt) ? user : nil
+  end
+  
+  def signed_in?
+    !current_user.nil?
+  end
+
 
 
   private
