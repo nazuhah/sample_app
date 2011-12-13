@@ -1,4 +1,8 @@
-blahh blahh
+edit 
+for 
+testing 
+to  
+load to 
 
 == Welcome to Rails
 This is the sample application for
