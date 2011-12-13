@@ -1,9 +1,10 @@
-edit 
-for 
-testing 
-to  
-load to 
+test
 
+
+test
+
+
+test
 == Welcome to Rails
 This is the sample application for
 [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
